@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{int limit;
+scanf("%d",&limit);
+    for(int row =1;row <=limit;row++)
+    {
+        printf("%d",row);
+        for(int col=row+1;col<=limit;col++)
+        {
+            printf("%d",col);
+        }
+        printf("\n");
+        for(int i=1;i<=row;i++)
+        {
+        printf(" ");
+    }}
+}
