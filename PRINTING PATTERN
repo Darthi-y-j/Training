@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {int height;
+    scanf("%d",&height);
+   int row, col, counter = 0; 
+    for (row= 1; row <= height; row++)
+    { 
+       printf("1"); 
+        for (col = 0; col <height+1; col++)
+        { 
+            if (col == height) 
+                printf("2"); 
+            else if (col == counter  || col == height - counter - 1) 
+                printf("3"); 
+            else
+                printf(" "); 
+        } 
+        if (counter == height / 2) { 
+            counter = -99999; 
+        } 
+        else
+            counter++; 
+        printf("\n"); 
+    } 
+}
