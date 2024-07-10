@@ -1,0 +1,30 @@
+/******************************************************************************
+
+FIBNOCCI SERIES (0 1 1 2 3 5....)
+
+1.SCAN LIMIT
+2.WE KNOW 1ST 2 NUMBER IS ALWAYS 0 1
+3.EXCLUDING 1ST TWO TERMS THE ENDING VALUE WE DECLARE AS (LIMIT -2)
+4.FIND T3
+5. Then we change t1 to t2 ...t2 to t3 ...and again we will find t3
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int t1=0,t2=1,t3,limit,temp=0;
+    scanf("%d",&limit);
+   // printf("%d %d",t1,t2);
+  int t=t1+t2;
+    for(int i=1;i<=limit-2;i++)
+    {
+        t3=t1+t2;
+        temp=t3+temp;
+       // printf(" %d",t3);
+        t1=t2;
+        t2=t3;
+    }
+   printf("%d",temp+t);
+    return 0;
+}
