@@ -1,0 +1,21 @@
+/******************************************************************************
+FACTORIAL USING RECURSION FUNCTION
+1.FACT(4)=1x2x3x4
+*******************************************************************************/
+#include <stdio.h>
+int fact(int num)
+{
+    if(num<=1)
+    return 1;
+    else
+    return num*fact(num-1);//RECURSION
+}
+int main()
+{ 
+    int num;
+    scanf("%d",&num);
+
+    printf("factorial:%d",fact(num));
+
+    return 0;
+}
