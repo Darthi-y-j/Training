@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+   int arr[200];
+   int size,index,start,next,i;
+   scanf("%d",&size);
+  
+   for(i=0;i<size;i++)
+   {
+       scanf("%d",&arr[i]);
+   }      
+   
+   for(start=0;start<size-1;start++)
+   {
+       for(next=start+1;next<size;next++)
+       {
+            if(arr[start]==arr[next])
+               {
+                    for(index=next;index<size;index++)
+                       arr[index]=arr[index+1];
+              size--;
+              next--;
+               }
+       }
+   }
+   //printf("\n%d",size);
+   for(index=0;index<size;index++)
+   {
+       printf("\n%d ",arr[index]);
+   }
+    return 0;
+}
+
