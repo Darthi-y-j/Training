@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{int size,count=0,count1=0,key,t1,t2;
+printf("size:");
+scanf("%d",&size);
+printf("key element");
+scanf("%d",&key);
+int a[size];
+
+for(int i=0;i<size;i++)
+{
+    scanf("%d",&a[i]);
+}
+for(int i=0;i<size;i++)
+{
+  if(key==a[i])
+  {
+      printf("%d",i);
+  } 
+}
+return 0;
+}
