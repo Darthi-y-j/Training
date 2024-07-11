@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{int limit,i=1;
+scanf("%d",&limit);
+    for(int row =1;row <=limit;row++)
+    {
+      printf("%d",row);
+      //printf("*");
+      for(int col=row+1;col<=limit;col++)
+      {   printf(" ");
+          printf("%d",col);
+          //printf("*");
+      }
+      printf("\n");
+      if(row!=limit)
+      {
+      for(int i=1;i<=row;i++)
+  {
+      printf(" ");
+  }}
+       
+    }
+    for(int row =limit-1;row >=1;row--)
+    {for(int i=2;i<=row;i++)
+       printf(" ");
+       printf("%d",row);
+       //printf("*");
+       for(int col=row+1;col<=limit;col++)
+       {   printf(" ");
+           printf("%d",col);
+          //printf("*");
+       }
+       printf("\n");
+       
+        
+    }
+}
