@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{int size,i,start,end,temp;
+
+printf("size");
+scanf("%d",&size);
+int arr[100];
+printf("enter the array values");
+for(i=0;i<size;i++)
+{
+    scanf("%d",&arr[i]);
+}  
+for(i=0;i<=size-2;i=i+2)
+{
+    temp=arr[i];
+    arr[i]=arr[i+1];
+    arr[i+1]=temp;
+}
+for(i=0;i<=size-1;i++)
+printf("%d " ,arr[i]);
+    return 0;
+}
